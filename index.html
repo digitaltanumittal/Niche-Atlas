@@ -758,7 +758,7 @@ const TAXONOMY = [
           { name:'AI tools for freelance writers', keywords:['ai writing tools','ai tools for writers'] },
           { name:'AI automation for small e-commerce stores', keywords:['ai automation ecommerce','shopify ai automation'] },
         ]},
-      { id:'gadgets-electronics', name:'Gadgets & Electronics', keywords:['gadgets','electronics','smartphone','laptop review','wearables'],
+      { id:'gadgets-electronics', name:'Gadgets & Electronics', keywords:['gadgets','electronics','smartphone','laptop review','wearables','laptop','laptops','best laptops'],
         micro:[
           { name:'Budget smartphones under a fixed price', keywords:['budget smartphone','cheap smartphone under'] },
           { name:'Best laptops for video editing', keywords:['laptops for video editing','video editing laptop'] },
@@ -917,7 +917,7 @@ const TAXONOMY = [
         micro:[ { name:'Board games for family game night with young kids', keywords:['family board games young kids','board game night kids'] } ]},
     ]},
   { id:'automotive', name:'Automotive', monetization:'medium',
-    keywords:['automotive','car','cars','vehicle','auto'],
+    keywords:['automotive','automobile','automobiles','car','cars','vehicle','auto'],
     platforms:['YouTube','Blog/SEO','Instagram'],
     monetizationMethods:['Affiliate marketing (parts, tools)','Display ads','Sponsored content','Digital products (repair guides)'],
     subNiches:[
@@ -1356,11 +1356,28 @@ mk('legal-services','Legal Services','high',true,['legal','law','lawyer','advoca
   ['personal-legal','Personal & Family Legal',['divorce','property dispute','will','family law','consumer court','legal notice'],[['Legal notice drafting for consumers',['legal notice','consumer complaint']]]],
   ['legal-content','Legal Information & Tech',['legal blog','legal tech','law students','legal awareness'],[['Simple legal guides in Hindi',['legal hindi','law hindi']]]],
 ]);
-mk('medical-clinics','Healthcare & Clinics','high',true,['healthcare','clinic','doctor','hospital','dentist','dental','medical','physiotherapy','diagnostic','pharmacy','ayurveda','homeopathy'],P_LOC,['Patient appointments','Lead generation','Healthcare content','Telemedicine'],
+mk('medical-clinics','Healthcare & Clinics','high',true,['healthcare','clinic','doctor','hospital','dentist','dental','medical','physiotherapy','diagnostic','pharmacy','ayurveda','homeopathy','surgeon','surgery','physician','nurse','nursing','specialist doctor','cardiologist','dermatologist','pediatrician','gynecologist','orthopedic','neurologist','oncologist','radiologist','ent specialist','urologist','ophthalmologist','plastic surgeon','cosmetic surgery'],P_LOC,['Patient appointments','Lead generation','Healthcare content','Telemedicine'],
   ['local-mkt','content-writing','social-media','va','support','design'],[
   ['dental-clinic','Dental Care',['dentist','dental','teeth','orthodontist','braces'],[['Patient marketing for dental clinics',['dental marketing','clinic patients']]]],
   ['clinic-practice','Clinics & Practice Growth',['clinic','doctor','appointments','opd','practice management'],[['Online appointment and reminders for small clinics',['appointment booking','clinic reminders']],['Google Maps reviews for local doctors',['google reviews doctor','local doctor']]]],
+  ['specialist-doctors','Specialist Doctors & Surgeons',['surgeon','surgery','surgical','cardiologist','dermatologist','pediatrician','gynecologist','orthopedic','neurologist','oncologist','radiologist','urologist','ophthalmologist','plastic surgeon','cosmetic surgery','specialist doctor','physician'],[['Personal brand and patient trust for surgeons',['surgeon brand','doctor personal brand','surgeon online presence']],['Patient education videos by specialist doctors',['patient education','doctor videos','health education doctor']],['Cosmetic and plastic surgery patient guides',['cosmetic surgery','plastic surgery','hair transplant']],['Second-opinion and surgery cost guides',['second opinion','surgery cost','operation cost']]]],
+  ['nursing-allied','Nursing & Allied Health Careers',['nurse','nursing','paramedic','lab technician','medical assistant','pharmacist','radiology technician'],[['Nursing exam and career guidance',['nursing exam','nursing career','nclex']],['Home nursing and patient care services',['home nursing','home care','patient care']]]],
   ['alt-medicine','Ayurveda, Homeopathy & Physiotherapy',['ayurveda','homeopathy','physiotherapy','naturopathy','unani'],[['Ayurveda product and care guides',['ayurvedic products','ayurveda guide']]]],
+]);
+mk('careers-professions','Careers & Professions','medium',false,['career','careers','profession','professions','job role','occupation','how to become','become a','salary of'],['LinkedIn','YouTube','Instagram'],['Career coaching','Courses and exam prep','Job and freelance listings','Affiliate (books, courses)'],
+  ['content-writing','tutor','social-media','design','video-editing','research-data'],[
+  ['engineers','Engineers & Technical Careers',['engineer','engineering','civil engineer','mechanical engineer','electrical engineer','electronics engineer','technician','diploma engineer','iti'],[['Career guidance for engineering students',['engineering career','engineering students']],['Freelance CAD and drafting services',['cad','autocad','drafting']]]],
+  ['aviation','Aviation & Airline Careers',['pilot','cabin crew','air hostess','flight attendant','aviation','airline','air traffic','aircraft maintenance'],[['Pilot training and DGCA exam guidance',['pilot training','dgca','cpl']],['Cabin crew interview preparation',['cabin crew interview','air hostess interview']]]],
+  ['accounting-careers','Accounting & Finance Professions',['accountant','chartered accountant','ca','cma','auditor','tax consultant','bookkeeper','company secretary','cs','financial advisor','banker'],[['Bookkeeping services for small businesses',['bookkeeping','small business accounts']],['CA exam guidance and study notes',['ca exam','ca final','ca foundation']]]],
+  ['teaching-academia','Teachers, Professors & Academia',['teacher','professor','lecturer','school teacher','college professor','tutor','coaching','educator','principal'],[['Online tuition for school students',['online tuition','home tuition']],['Teacher recruitment exam preparation',['ctet','tet','teacher exam']]]],
+  ['defence-civil-services','Defence, Police & Civil Services',['army','navy','air force','police','ias','ips','civil services','defence','nda','soldier','constable','paramilitary'],[['NDA and defence entrance coaching',['nda','defence exam']],['Police constable exam preparation',['constable','police exam']]]],
+  ['science-research','Scientists & Researchers',['scientist','researcher','research scholar','phd','biologist','chemist','physicist','lab researcher','isro','drdo'],[['PhD admission and research guidance',['phd admission','research guidance']],['Science explainers for students',['science explainer','science videos']]]],
+  ['journalism-media-careers','Journalists, Actors & Media Professionals',['journalist','reporter','news anchor','anchor','actor','actress','model','film maker','filmmaker','director','radio jockey','rj','editor'],[['Journalism and mass communication careers',['journalism career','mass communication']],['Acting and modelling portfolio guidance',['acting portfolio','modelling portfolio']]]],
+  ['veterinary-animal-care','Veterinarians & Animal Care Professionals',['veterinarian','veterinary','vet','animal doctor','pet groomer','dog trainer','zookeeper'],[['Pet clinic marketing and appointments',['vet clinic','pet clinic']],['Dog training and grooming services',['dog training','pet grooming']]]],
+  ['psychology-counselling','Psychologists & Counsellors',['psychologist','counsellor','counselor','psychiatrist','therapist','career counsellor','school counsellor'],[['Online counselling practice growth',['online counselling','therapy practice']],['Career counselling for students',['career counselling','student counselling']]]],
+  ['chefs-hospitality','Chefs & Hospitality Careers',['chef','cook','baker','pastry chef','hotel management','bartender','barista','hospitality career'],[['Home chef and cloud kitchen starter',['home chef','cloud kitchen']],['Hotel management career guidance',['hotel management','hotel career']]]],
+  ['management-corporate','Managers, MBA & Corporate Careers',['manager','mba','project manager','product manager','team leader','executive','corporate job','business analyst','hr manager','consultant'],[['MBA admission and interview coaching',['mba admission','mba interview']],['Project management certification guidance',['pmp','project management certification']]]],
+  ['skilled-trades','Skilled Trades & Technical Workers',['driver','welder','mechanic','fitter','machinist','technician job','tailor','mason','crane operator','forklift','security guard'],[['Driver and delivery job training',['driver training','delivery driver']],['Welding and fitter skill certification',['welding course','fitter course']]]],
 ]);
 mk('mental-wellbeing','Mental Wellbeing & Self-improvement','medium',true,['mental health','therapy','counselling','counseling','self improvement','motivation','mindset','habits','productivity','life coach','stress','burnout'],['Instagram','YouTube','Blog/SEO'],['Coaching','Courses','Apps/subscriptions','Workshops'],
   ['content-writing','design','video-editing','social-media','digital-products'],[
@@ -1398,9 +1415,13 @@ mk('events-weddings','Event Planning & Weddings','medium',false,['event','events
   ['party-decor','Party, Birthday & Decor',['birthday party','balloon decoration','theme party','decoration','baby shower'],[['Birthday theme decor packages',['birthday decor','theme decor']]]],
   ['corporate-events','Corporate Events',['corporate event','conference','team outing','product launch'],[['Team outing and offsite planning',['team outing','offsite']]]],
 ]);
-mk('local-services','Local & Home Services','medium',false,['plumber','electrician','carpenter','painter','repair','home service','handyman','pest control','ac repair','cleaning service','packers movers','laundry','mechanic','locksmith','service provider','near me'],P_LOC,['Service bookings','Lead generation','Subscriptions/AMC','Franchise'],
+mk('local-services','Local & Home Services','medium',false,['plumber','electrician','carpenter','painter','repair','home service','handyman','pest control','ac repair','cleaning service','packers movers','laundry','mechanic','locksmith','service provider','near me','repair service','repair services','repairing','fix','servicing','washing machine','refrigerator','fridge','geyser','microwave','invertor','inverter','ro service','water purifier'],P_LOC,['Service bookings','Lead generation','Subscriptions/AMC','Franchise'],
   ['local-mkt','lead-gen','va','design','social-media','web-wp'],[
-  ['home-repairs','Repairs & Maintenance',['plumber','electrician','carpenter','ac repair','appliance repair','handyman'],[['AC service and AMC plans for apartments',['ac service','amc plan']]]],
+  ['home-repairs','Repairs & Maintenance',['plumber','electrician','carpenter','handyman','plumbing','wiring','tap repair','leakage','waterproofing'],[['AC service and AMC plans for apartments',['ac service','amc plan']],['Plumbing and electrical on-call service for flats',['on call plumber','electrician flat','plumbing service']]]],
+  ['appliance-repair','Home Appliance Repair & Service',['appliance repair','washing machine','refrigerator','fridge','geyser','microwave','inverter','invertor','ro service','water purifier','chimney','tv repair','led tv','cooler','fan repair','ac service','ac repair','appliance','home appliance'],[['Washing machine and fridge repair with doorstep service',['washing machine repair','fridge repair','doorstep repair']],['RO and water purifier service plans (AMC)',['ro service','water purifier','ro amc']],['Inverter and battery repair service',['inverter repair','battery repair','inverter service']]]],
+  ['vehicle-repair','Vehicle Repair & Garage Services',['car repair','bike repair','scooter repair','garage','puncture','car service','bike service','denting','painting car','car wash','mechanic','tyre','tire','two wheeler','auto repair','roadside assistance'],[['Doorstep bike servicing for daily commuters',['doorstep bike','bike servicing']],['Car denting and painting studio',['car denting','car painting']],['Puncture and roadside assistance on call',['puncture','roadside assistance','towing']]]],
+  ['personal-item-repair','Watch, Shoe, Bag & Leather Repair',['watch repair','shoe repair','cobbler','bag repair','leather repair','zip repair','umbrella repair','jewellery repair','spectacles repair','tailor alteration','alteration'],[['Premium shoe and bag restoration service',['shoe restoration','bag restoration','leather restoration']],['Pickup-and-drop watch repair',['watch repair','watch servicing']]]],
+  ['furniture-repair','Furniture & Carpentry Repair',['furniture repair','sofa repair','bed repair','door repair','window repair','polish','wood polish','carpentry repair','modular kitchen repair','lock repair'],[['Sofa and chair repair and re-polishing at home',['sofa repair','chair repair','re polish']],['Door, window and lock repair on call',['door repair','window repair','lock repair']]]],
   ['cleaning-pest','Cleaning & Pest Control',['cleaning service','deep cleaning','pest control','sofa cleaning','water tank cleaning'],[['Deep cleaning packages for new flats',['deep cleaning flat','move in cleaning']]]],
   ['movers-logistics-local','Moving & Delivery',['packers movers','shifting','courier','tempo','delivery'],[['Small-load shifting for students and bachelors',['small shifting','bachelor shifting']]]],
 ]);
@@ -1476,9 +1497,9 @@ mk('nonprofit-social','Nonprofit & Social Causes','low',false,['ngo','nonprofit'
   ['ngo-communication','NGO Communication',['ngo','nonprofit','awareness campaign','volunteer','storytelling'],[['Social media and impact stories for NGOs',['ngo social media','impact stories']]]],
   ['community-causes','Community & Cause Projects',['community','social cause','environment drive','education drive'],[['Local community drives and volunteering platforms',['community drive','volunteer platform']]]],
 ]);
-mk('electronics-repair','Electronics, Mobile & Hardware','medium',false,['electronics','mobile repair','laptop repair','hardware','computer repair','cctv','printer','networking','gadget repair','iphone repair','spare parts','refurbished'],P_LOC,['Repair fees','Parts and accessories','AMC contracts','Resale'],
+mk('electronics-repair','Electronics, Mobile & Hardware','medium',false,['electronics','mobile repair','laptop repair','hardware','computer repair','laptop service','laptop servicing','laptop service center','laptop battery','laptop screen','laptop keyboard','laptop hinge','laptop charger','laptop upgrade','computer service','computer servicing','pc repair','pc service','desktop repair','motherboard','chip level','ssd upgrade','ram upgrade','printer service','printer repair','phone repair','screen repair','cctv','printer','networking','gadget repair','iphone repair','spare parts','refurbished'],P_LOC,['Repair fees','Parts and accessories','AMC contracts','Resale'],
   ['local-mkt','social-media','video-editing','content-writing','support','lead-gen'],[
-  ['mobile-laptop-repair','Mobile & Laptop Repair',['mobile repair','laptop repair','screen replacement','iphone repair','data recovery'],[['Doorstep mobile repair in a city',['doorstep mobile repair','mobile service']]]],
+  ['mobile-laptop-repair','Mobile & Laptop Repair',['mobile repair','laptop repair','screen replacement','iphone repair','data recovery','phone repair','phone screen','screen repair','mobile screen','tablet repair','charging port','laptop service','laptop servicing','laptop service center','laptop battery','laptop screen','laptop keyboard','laptop hinge','laptop charger','laptop upgrade','computer service','computer servicing','pc repair','pc service','desktop repair','motherboard','chip level','ssd upgrade','ram upgrade','printer service','printer repair'],[['Doorstep mobile repair in a city',['doorstep mobile repair','mobile service']],['Laptop servicing and SSD/RAM upgrades for students and offices',['laptop service','laptop upgrade','ssd upgrade','ram upgrade']],['Laptop battery, screen and keyboard replacement',['laptop battery','laptop screen','laptop keyboard']]]],
   ['cctv-networking','CCTV & Networking',['cctv','wifi','networking','security camera','biometric'],[['CCTV installation for shops and homes',['cctv shops','cctv homes']]]],
   ['refurbished','Refurbished & Accessories',['refurbished','used phones','accessories','spare parts','second hand'],[['Refurbished laptops for students',['refurbished laptops','student laptops']]]],
 ]);
@@ -1643,6 +1664,14 @@ mk('artificial-intelligence','Artificial Intelligence (Tools & Learning)','high'
   ['ai-creative','AI Image, Video & Content',['ai art','ai video','ai image','midjourney','generative ai','gen ai'],[['AI product photos and ads for small sellers',['ai product photos','ai ads']]]],
   ['ai-learning','AI Courses & Upskilling',['ai course','machine learning','llm','learn ai','ai for beginners'],[['AI upskilling workshops for working professionals',['ai workshop','ai upskilling']]]],
 ]);
+mk('immigration-visa','Immigration, Visa & Moving Abroad','high',true,['immigration','immigrate','emigrate','emigration','visa','visas','residency','overseas','abroad','migration','migrate','pr application','foreign','relocate','study canada','study uk','study usa','study australia','study germany','study ireland','jobs germany','jobs canada','jobs australia','jobs uk','jobs usa','jobs dubai','move canada','move uk','move australia'],['YouTube','Instagram','Blog/SEO'],['Consultation fees','Document services','Affiliate (forex, insurance, relocation)','Lead generation'],
+  ['content-writing','research-data','translation','social-media','va','lead-gen'],[
+  ['visa-services','Visa & Immigration Consulting',['visa','visa consultant','visa consultancy','immigration consultant','visa application','tourist visa','visit visa','visa interview','visa rejection','passport','schengen','h1b','b1 b2'],[['Tourist visa documentation help for first-time travellers',['tourist visa','visit visa','schengen visa']],['Visa interview preparation coaching',['visa interview','f1 interview']],['Visa rejection reapplication guidance',['visa rejection','visa refusal','reapply visa']]]],
+  ['permanent-residency','Permanent Residency & Migration Pathways',['permanent residency','canada pr','australia pr','pr visa','express entry','skilled migration','point system','green card','immigration points','citizenship','settle abroad','migrate'],[['Canada Express Entry guidance for skilled workers',['express entry','canada pr','crs score']],['Australia skilled migration points guide',['australia pr','skilled migration','189 visa']],['Citizenship by investment explained simply',['citizenship by investment','golden visa']]]],
+  ['work-abroad','Work Permits & Jobs Abroad',['work permit','work visa','job abroad','overseas jobs','gulf jobs','skilled worker visa','sponsorship','nursing jobs abroad','jobs germany','jobs canada','relocation'],[['Jobs in Germany with the Opportunity Card',['jobs germany','opportunity card','chancenkarte']],['Gulf and overseas job screening guidance',['gulf jobs','overseas jobs']],['Relocation checklist for working abroad',['relocation checklist','move abroad']]]],
+  ['study-abroad','Study Abroad & Student Visas',['study abroad','student visa','study canada','study uk','study usa','study australia','overseas education','sop','statement of purpose','university admission abroad','scholarship abroad','ielts','toefl','gre','gmat'],[['Study in Canada guide and student visa steps',['study canada','study permit']],['SOP and admission essay review service',['sop','statement of purpose','admission essay']],['Scholarships abroad for Indian students',['scholarship abroad','scholarships for indian students']]]],
+  ['family-business-immigration','Family, Business & Investor Immigration',['spouse visa','family sponsorship','dependent visa','dependent visa','startup visa','investor visa','business immigration','parents visa','pr for spouse'],[['Spouse and family sponsorship paperwork guide',['spouse visa','family sponsorship']],['Start-up visa and investor routes explained',['startup visa','investor visa']]]],
+]);
 // extra sub-niches on existing mains
 (function(){
   const trav = TAXONOMY.find((m) => m.id === 'travel');
@@ -1675,29 +1704,45 @@ function narrowIdeas(name){
     L(`${name} for working people`, `${name} job karne walon ke liye`),
   ];
 }
+function microFit(main, name){
+  const n = String(name).toLowerCase();
+  if (/treatment|diagnos|prescription|legal drafting|investment advice|trading signals/.test(n)) return 'hard';
+  if (/guide|guidance|explained|checklist|tips|education|videos|notes|review|comparison|content|templates|listing|portfolio|brand|prep|preparation/.test(n)) return (main.isYMYL || main.caution) ? 'med' : 'easy';
+  if (/servic|repair|installation|clinic|coaching|training|consult|practice|studio|agency|amc|doorstep|on call|on-call|assistance|booking|appointment|replacement/.test(n)) return 'med';
+  return fresherLevel(main, 'micro');
+}
 function breakdownHtml(result){
   const main = result.mainRef, subSel = result.subRef, microSel = result.microRef;
   if (!main) return '';
-  const ordered = main.subNiches.slice().sort((a, b) => (subSel && b.id === subSel.id) - (subSel && a.id === subSel.id));
-  const microLvl = fresherLevel(main, 'micro');
-  const subs = ordered.map((s) => {
+  const subLvl = fresherLevel(main, 'sub');
+  const renderSub = (s) => {
     const isSel = subSel && s.id === subSel.id;
     const micros = s.micro.map((m) => {
       const here = isSel && microSel && m.name === microSel.name;
-      return `<li class="${here ? 'here' : ''}">${escapeHtml(m.name)}${here ? ` <span class="narrow">(${escapeHtml(L('your topic', 'aapka topic'))})</span>` : ''}${fitBadge(microLvl)}</li>`;
+      return `<li class="${here ? 'here' : ''}">${escapeHtml(m.name)}${here ? ` <span class="narrow">(${escapeHtml(L('your topic', 'aapka topic'))})</span>` : ''}${fitBadge(microFit(main, m.name))}</li>`;
     }).join('');
     return `<div class="subn-block">
       <h3 class="subn-title">${escapeHtml(s.name)}${isSel ? `<span class="fit easy">${escapeHtml(L('Closest to your topic', 'Aapke topic ke sabse paas'))}</span>` : ''}</h3>
       <ul class="mylist">${micros}</ul></div>`;
-  }).join('');
-  const pick = (microSel && microSel.name) || (subSel && subSel.name) ||(main.subNiches[0] && main.subNiches[0].micro[0] && main.subNiches[0].micro[0].name) || main.name;
+  };
+  const selected = subSel ? main.subNiches.filter((x) => x.id === subSel.id) : [];
+  const others = main.subNiches.filter((x) => !subSel || x.id !== subSel.id);
+  const shown = subSel ? selected : others.slice(0, 3);
+  const hidden = subSel ? others : others.slice(3);
+  const subs = shown.map(renderSub).join('') + (hidden.length
+    ? `<details class="subn"><summary>${escapeHtml(L(`Other areas inside ${main.name} (${hidden.length})`, `${main.name} ke baaki areas (${hidden.length})`))}</summary>${hidden.map(renderSub).join('')}</details>`
+    : '');
+  const placed = [main.name, subSel && subSel.name, microSel && microSel.name].filter(Boolean).map((x) => `<strong>${escapeHtml(x)}</strong>`).join(' → ');
+  const topicLine = `<p class="topic-line" style="margin:0 0 14px;font-size:.92rem;line-height:1.6">${escapeHtml(L('Your topic', 'Aapka topic'))} “${escapeHtml(result.rawTopic)}” ${escapeHtml(L('sits at', 'yahan aata hai'))}: ${placed}</p>`;
+  const pick = (microSel && microSel.name) || (subSel && subSel.micro[0] && subSel.micro[0].name) || (main.subNiches[0] && main.subNiches[0].micro[0] && main.subNiches[0].micro[0].name) || main.name;
   const sharpen = `<div class="sharpen"><strong>${escapeHtml(L('Make your pick sharper.', 'Apni pick ko aur sharp banao.'))}</strong>
     ${escapeHtml(L('Take one micro-niche and add WHO it is for, WHERE, or in which LANGUAGE. For example:', 'Ek micro-niche lo aur usme jodo ki ye KISKE liye hai, KAHAN, ya kis BHASHA me. Jaise:'))}
-    <ul class="mylist"><li>${escapeHtml(pick)} — ${escapeHtml(L('for college students', 'college students ke liye'))}</li>
+    <ul class="mylist"><li>${escapeHtml(pick)} — ${escapeHtml(L('for first-time customers', 'pehli baar lene walon ke liye'))}</li>
     <li>${escapeHtml(pick)} — ${escapeHtml(L('in Hindi', 'Hindi me'))}</li>
     <li>${escapeHtml(pick)} — ${escapeHtml(L('for people in your city', 'aapke sheher ke logon ke liye'))}</li></ul></div>`;
   const legend = `<p class="legend"><span class="fit easy">${escapeHtml(L('Easy for freshers', 'Fresher ke liye aasaan'))}</span> ${escapeHtml(L('very specific, less competition, no licence needed.', 'bahut specific, competition kam, licence nahi chahiye.'))}
-    <span class="fit med">${escapeHtml(L('Medium', 'Medium'))}</span> ${escapeHtml(L('specific, but needs real knowledge or trust (health and money topics).', 'specific hai, par asli knowledge ya trust chahiye (health aur paise ke topics).'))}</p>`;  const ymyl = main.isYMYL
+    <span class="fit med">${escapeHtml(L('Medium', 'Medium'))}</span> ${escapeHtml(L('needs real skill, equipment or trust (services, health and money topics).', 'asli skill, equipment ya trust chahiye (services, health aur paise ke topics).'))}
+    <span class="fit hard">${escapeHtml(L('Hard', 'Mushkil'))}</span> ${escapeHtml(L('needs a licence or professional qualification.', 'licence ya professional degree chahiye.'))}</p>`;  const ymyl = main.isYMYL
     ? `<p class="warn-box" style="margin-top:12px">${escapeHtml(L('Health and money topics need extra care. Freshers should not give medical or financial advice. Work as a writer, designer or editor with an expert reviewing the content.', 'Health aur paise ke topics me extra dhyan rakho. Fresher ko medical ya financial advice nahi deni chahiye. Writer, designer ya editor ki tarah kaam karo, aur content kisi expert se check karwao.'))}</p>` : '';
   const ids = ROLE_BY_MAIN[main.id] || ['content-writing','social-media','design','va'];
   const nm = result.hierarchy.microNiche || result.hierarchy.subNiche || main.name;
@@ -1713,6 +1758,7 @@ function breakdownHtml(result){
       <p class="rank">${escapeHtml(L('Break it down', 'Tod ke dekho'))}</p>
       <h2>${escapeHtml(L('Ideas inside ', 'Is niche ke andar ke ideas: '))}${escapeHtml(main.name)}</h2>
       <p class="fine" style="margin-top:0">${escapeHtml(L('A sub-niche is a smaller area inside the niche. A micro-niche is one very specific topic inside that area. Freshers do better with micro-niches, because the broad niche is too crowded.', 'Sub-niche niche ke andar ka chhota area hai. Micro-niche us area ke andar ek bahut specific topic hai. Freshers ke liye micro-niche behtar hai, kyunki broad niche me bahut bheed hoti hai.'))}</p>
+      ${topicLine}
       ${legend}
       ${subs}
       ${sharpen}
